@@ -15,14 +15,14 @@ build-firefox: clean
 
 package-chrome: build-chrome
 	cd dist && npx web-ext build
-	mv dist/web-ext-artifacts/aws_agent*.zip chrome.zip
+	mv dist/web-ext-artifacts/aws_agent_alfi*.zip chrome.zip
 package-firefox: build-firefox _prepare-firefox
 	cd dist && npx web-ext build
-	mv dist/web-ext-artifacts/aws_agent*.zip firefox.zip
+	mv dist/web-ext-artifacts/aws_agent_alfi*.zip firefox.zip
 
 _prepare-firefox:
 	npx json -I -f dist/manifest.json \
-	-e 'this.applications = { gecko: { id: "aws-agent@exthilion.org" } };' \
+	-e 'this.applications = { gecko: { id: "aws-agent@alfi.guru" } };' \
 	-e 'this.options_ui.browser_style = true;' \
 	-e 'this.icons = { "16": "ico.svg", "48": "ico.svg", "128": "ico.svg" };' \
 	-e 'this.browser_action.default_icon = this.icons;'

@@ -1,6 +1,6 @@
 {
-  "name": "aws-agent",
-  "version": "0.3.0",
+  "name": "aws-agent-alfi",
+  "version": "0.3.1",
   "description": "Chrome extension that enables access to AWS resources",
   "scripts": {
     "test": "mocha",
@@ -18,7 +18,7 @@
     "sigv4",
     "chrome-extension"
   ],
-  "author": "John Jones <john@exthilion.org>",
+  "author": "Alfred Mueller <alfredmueller@gmx.at>",
   "license": "MIT",
   "devDependencies": {
     "assert": "^2.0.0",

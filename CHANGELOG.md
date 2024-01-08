@@ -1,6 +1,9 @@
 # Change Log
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
+## [0.3.1] - 2024-01-08
+- Just a build of the current state of [liath/aws-agent](https://github.com/liath/aws-agent) forked into [mrmurnst/aws-agent](https://github.com/mrmurnst/aws-agent)
+
 ## [Unreleased]
 ### Changed
 - Extension is now a customized for Chrome vs Firefox as Chrome still lacks async support on needed APIs.
